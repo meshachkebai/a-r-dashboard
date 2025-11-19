@@ -1,0 +1,93 @@
+.create-artist-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.create-artist-form-container {
+    max-width: 600px;
+}
+
+.create-artist-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .create-artist-form {
+        gap: 1rem;
+    }
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        gap: 1rem;
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.form-group small {
+    font-size: 0.75rem;
+    margin-top: -0.25rem;
+}
+
+.code-input-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.code-input-group input {
+    flex: 1;
+}
+
+.code-input-group .btn {
+    white-space: nowrap;
+}
+
+.error-message {
+    background: rgba(220, 53, 69, 0.1);
+    border: 1px solid var(--brand-danger);
+    border-radius: 8px;
+    padding: 0.75rem;
+    color: var(--brand-danger);
+    font-size: 0.875rem;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+}
